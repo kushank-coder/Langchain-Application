@@ -7,7 +7,8 @@ loader = GenericLoader(
     OpenAIWhisperParser()
 ) #youtubeaudioloader - converts video to audio 
 #openaiwhisperparser - converts audio to text
-
+#PyPDFLoader - pds docs
+#WebBaseLoader - any url 
 Step2: Use loader.load() to load the dataset into your current python machine. For eg
 docs = loader.load()
 
