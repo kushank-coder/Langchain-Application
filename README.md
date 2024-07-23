@@ -22,7 +22,7 @@ Step4: Each document has 2 attributes ....1 -> page_content  (main text) and
 
 Step 5
 ## Now Data is Loaded (on which langchain uses as base data from which info will come (info source)), now we need to 
-		5.1) split the document pages into smaller chunks
+		5.1) split the document pages into smaller chunks (2 parameters here chunk size and chunk overlap)
 		5.2) make embeddings by using hugging face or open ai embeddings
 		5.3) Store the chunks and their corresponding embeddings in a vector space (vector space == a dictionary where key is chunks and values are embeddings)
 		5.4) take the question from the user about what questions he wants to ask?
