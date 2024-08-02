@@ -36,4 +36,6 @@ Step 6 Store the chunks and their embeddings in the vector database
 
 Step 7) Retrieve documents from vector database (by using retriever ex - Self Query Retriever, Compression LLM Retriever, MMR (maximum marginal relevance, Basic Similarity Search))
 
-##Note Search operation is always done on vector database ie vector_db.similarity_search() or vector_db.max_marginal_relevance etc
+### Sometimes bare similarity search of embedding is not good enough, we need to apply filters also like if we want results from a particular city, we will apply filter first and then apply seach on the results from the city. This is the basic concept behind Sel Query Retriever
+
+##Note Semantic Search operation is always done on vector database ie vector_db.similarity_search() or vector_db.max_marginal_relevance etc
